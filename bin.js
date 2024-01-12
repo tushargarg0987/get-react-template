@@ -23,13 +23,22 @@ async function main(args) {
             pageSize: 7
         });
         console.log(`\n`);
-        // console.log(answer)
+        const anim = (function () {
+            var P = ["\\", "|", "/", "-"];
+            var emo = ["🏋️‍♂️","🚶‍♂️","🏃‍♂️","🚴‍♂️"]
+            var x = 0
+            return setInterval(function () {
+                process.stdout.write(`\r\x1b[1m\x1b[5m${emo[x]} Creating the template for ${answer.name} .. \x1b[0m\x1b[1m${P[x++]}\x1b[0m`);
+                x &= 3;
+            }, 250);
+        })();
         exec(`git clone ${answer.git} ${args.argv._.length > 0 ? args.argv._[0] : ""}`, (err, stdout, stderr) => {
             if (err) {
                 clearInterval(anim)
                 console.log(`\nerror: ${err.stack}`);
                 return;
             }
+            clearInterval(anim)
             console.log(`\n ${stdout}`);
             const installationProcess = spawn(`cd ${args.argv._.length > 0 ? args.argv._[0] : answer.repoName} && npm install .`, { stdio: 'inherit', shell: true });
             installationProcess.on('exit', (code, signal) => {
