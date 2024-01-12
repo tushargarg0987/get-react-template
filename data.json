@@ -1,0 +1,121 @@
+[
+  {
+    "name": "Gatsby Starter Ghost",
+    "repo": "https://github.com/TryGhost/gatsby-starter-ghost.git",
+    "livePreview": "https://gatsby.ghost.org/",
+    "description": "A starter template to build lightning fast websites with Ghost & Gatsby.",
+    "repoName": "gatsby-starter-ghost",
+    "script": "npm run dev",
+    "author": {
+      "name": "Ghost",
+      "github": "https://github.com/TryGhost"
+    }
+  },
+  {
+    "name": "React Nice Resume",
+    "repo": "https://github.com/nordicgiant2/react-nice-resume.git",
+    "livePreview": "https://nordicgiant2.github.io/react-nice-resume-page/",
+    "description": "A React.js Nice Resume Template",
+    "repoName": "react-nice-resume",
+    "script": "npm start",
+    "author": {
+      "name": "Nordic Giant",
+      "github": "https://github.com/nordicgiant2"
+    }
+  },
+  {
+    "name": "Dev Blog",
+    "repo": "https://github.com/RyanFitzgerald/devblog.git",
+    "livePreview": "https://ryanfitzgerald.github.io/devblog/",
+    "description": "A lightweight, customizable personal blog template built with GatsbyJS and React",
+    "repoName": "devblog",
+    "script": "npm run dev",
+    "author": {
+      "name": "Ryan Fitzgerald",
+      "github": "https://github.com/RyanFitzgerald"
+    }
+  },
+  {
+    "name": "React-Landing-Page-Template",
+    "repo": "https://github.com/issaafalkattan/React-Landing-Page-Template.git",
+    "livePreview": "https://react-landing-page-template-93ne.vercel.app/",
+    "description": "A simple react one page landing page templates for startups/companies",
+    "repoName": "React-Landing-Page-Template",
+    "script": "npm start",
+    "author": {
+      "name": "Issaaf Kattan",
+      "github": "https://github.com/issaafalkattan"
+    }
+  }, 
+  {
+    "name": "Boss Lite - React Redux Material Admin Template",
+    "repo": "https://github.com/ilhammeidi/boss-lite.git",
+    "livePreview": "https://boss.ux-maestro.com/app",
+    "description": "Boss Lite is admin dashboard template based on React and Redux. It provides you clean modern design and high performance react app with various color theme.",
+    "repoName": "boss-lite",
+    "script": "npm run dev",
+    "author": {
+      "name": "Ilham Meidi",
+      "github": "https://github.com/ilhammeidi"
+    }
+  },  
+  {
+    "name": "TailAdmin Dashboard(React + Tailwind)",
+    "repo": "https://github.com/TailAdmin/tailadmin-free-tailwind-dashboard-template.git",
+    "livePreview": "https://tailadmin.com/",
+    "description": "TailAdmin is a Tailwind CSS-based Admin Dashboard Template, provides developers with everything need to create a complete, data-driven back-end, dashboard, or admin panel solution for upcoming web projects.",
+    "repoName": "tailadmin-free-tailwind-dashboard-template",
+    "script": "npm start",
+    "author": {
+      "name": "TailAdmin",
+      "github": "https://github.com/TailAdmin"
+    }
+  },
+  {
+    "name": "Solid (Next.js + SaaS)",
+    "repo": "https://github.com/NextJSTemplates/solid-nextjs.git",
+    "livePreview": "https://solid.nextjstemplates.com/",
+    "description": "Solid is a free Next.js template specifically crafted for startups, SaaS, and software websites.",
+    "repoName": "solid-nextjs",
+    "script": "npm run dev",
+    "author": {
+      "name": "Next.js Templates",
+      "github": "https://github.com/NextJSTemplates"
+    }
+  },
+  {
+    "name": "Shards Dashboard (React)",
+    "repo": "https://github.com/DesignRevision/shards-dashboard-react.git",
+    "description": "A free and beautiful React admin dashboard template pack.",
+    "repoName": "shards-dashboard-react",
+    "script": "npm start",
+    "author": {
+      "name": "DesignRevision",
+      "github": "https://github.com/DesignRevision"
+    }
+  },
+  {
+    "name": "Matx Admin Dashboard(React + Material UI)",
+    "repo": "https://github.com/uilibrary/matx-react.git",
+    "description": "Matx -Free and open-source React Material UI Admin Dashboard Template.",
+    "repoName": "matx-react",
+    "script": "npm start",
+    "author": {
+      "name": "UI Lib",
+      "github": "https://github.com/uilibrary"
+    }
+  },
+  {
+    "name": "Gatsby Admin Template",
+    "repo": "https://github.com/paljs/gatsby-admin-template.git",
+    "livePreview": "https://gatsby-admin.paljs.com",
+    "description": "Free admin dashboard template based on Gatsby with @paljs/ui component package.",
+    "repoName": "gatsby-admin-template",
+    "script": "npm run dev",
+    "author": {
+      "name": "Pal.js",
+      "github": "https://github.com/paljs"
+    }
+  }
+  
+]

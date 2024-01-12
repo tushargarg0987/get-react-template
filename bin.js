@@ -4,7 +4,7 @@ import { exec, spawn } from "child_process";
 import yargs from "yargs";
 import { hideBin } from 'yargs/helpers'
 import select from '@inquirer/select';
-import { fetchTemplates } from "./helper";
+import { fetchTemplates } from "./helper.js";
 
 async function main(args) {
     const data = await fetchTemplates();
@@ -39,7 +39,7 @@ async function main(args) {
                 return;
             }
             clearInterval(anim)
-            console.log(`\n ${stdout}`);
+            process.stdout.write(`\r\x1b[32m ✨ Successfully created the template for \x1b[1m${answer.name}\x1b[0m\n\n`);
             const installationProcess = spawn(`cd ${args.argv._.length > 0 ? args.argv._[0] : answer.repoName} && npm install .`, { stdio: 'inherit', shell: true });
             installationProcess.on('exit', (code, signal) => {
                 if (code === 0) {
