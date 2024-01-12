@@ -2,7 +2,7 @@
   "name": "get-react-template",
   "version": "1.0.0",
   "description": "A powerful tool to create react templates for particular use cases",
-  "main": "index.js",
+  "bin": "./bin.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
