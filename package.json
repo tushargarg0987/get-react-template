@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A powerful tool to create react templates for particular use cases",
   "bin": "./bin.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/tushargarg0987/get-react-template/issues"
   },
-  "homepage": "https://github.com/tushargarg0987/get-react-template#readme"
+  "homepage": "https://github.com/tushargarg0987/get-react-template#readme",
+  "dependencies": {
+    "yargs": "^17.7.2"
+  }
 }
