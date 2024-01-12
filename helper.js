@@ -1,4 +1,4 @@
-export async function fetchLinks() {
+export async function fetchTemplates() {
     var links;
     await fetch('data_url')
         .then((response) => response.json())

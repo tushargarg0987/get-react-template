@@ -3,8 +3,10 @@
 import yargs from "yargs";
 import { hideBin } from 'yargs/helpers'
 import select from '@inquirer/select';
+import { fetchTemplates } from "./helper";
 
 async function main(args) {
+    const data = await fetchTemplates();
     if (args.argv._.length <= 1) {
         const answer = await select({
             message: 'Select a react theme',
