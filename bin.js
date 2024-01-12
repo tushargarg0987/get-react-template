@@ -43,9 +43,9 @@ async function main(args) {
             const installationProcess = spawn(`cd ${args.argv._.length > 0 ? args.argv._[0] : answer.repoName} && npm install .`, { stdio: 'inherit', shell: true });
             installationProcess.on('exit', (code, signal) => {
                 if (code === 0) {
-                    console.log(`Success`);
+                    console.log(`\n\n  \x1b[32m🎉 The template was setup successfully\x1b[0m \n\x1b[48;5;235m\n\n  To start the app run: \n\n\t\x1b[33mcd\x1b[0m\x1b[48;5;235m ${args.argv._.length > 0 ? args.argv._[0] : answer.repoName}\x1b[48;5;235m\n\n\t${answer.script} \n\x1b[0m\n\n  \x1b[36mHappy Hacking 😎!!\x1b[0m\n`);
                 } else {
-                    console.error(`Fail`);
+                    console.error(`  🥲 Installation Failed. \n\x1b[48;5;235m\n\n  Please try again or install manually by running: \n\n\t\x1b[33mcd\x1b[0m\x1b[48;5;235m ${args.argv._.length > 0 ? args.argv._[0] : answer.repoName}\x1b[48;5;235m\n\n\t${answer.script} \n\x1b[0m\n`);
                 }
             })
         })
