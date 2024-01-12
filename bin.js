@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+import { exec, spawn } from "child_process";
 import yargs from "yargs";
 import { hideBin } from 'yargs/helpers'
 import select from '@inquirer/select';
@@ -18,21 +19,27 @@ async function main(args) {
     if (args.argv._.length <= 1) {
         const answer = await select({
             message: 'Select a react theme',
-            choices: [
-                {
-                    name: 'npm',
-                    value: 'npm',
-                    description: 'npm is the most popular package manager',
-                },
-                {
-                    name: 'yarn',
-                    value: 'yarn',
-                    description: 'yarn is an awesome package manager',
-                },
-            ],
+            choices: mapData,
             pageSize: 7
         });
-        console.log(answer)
+        console.log(`\n`);
+        // console.log(answer)
+        exec(`git clone ${answer.git} ${args.argv._.length > 0 ? args.argv._[0] : ""}`, (err, stdout, stderr) => {
+            if (err) {
+                clearInterval(anim)
+                console.log(`\nerror: ${err.stack}`);
+                return;
+            }
+            console.log(`\n ${stdout}`);
+            const installationProcess = spawn(`cd ${args.argv._.length > 0 ? args.argv._[0] : answer.repoName} && npm install .`, { stdio: 'inherit', shell: true });
+            installationProcess.on('exit', (code, signal) => {
+                if (code === 0) {
+                    console.log(`Success`);
+                } else {
+                    console.error(`Fail`);
+                }
+            })
+        })
     } else {
         console.error(`\nerror: unexpected arguments\nusage: npx get-react-template <project name>:optional\n`)
     }
