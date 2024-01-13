@@ -7,7 +7,18 @@ import select from '@inquirer/select';
 import { fetchTemplates } from "./helper.js";
 
 async function main(args) {
+    const anim2 = (function () {
+        var P = ["\\", "|", "/", "-"];
+        var emo = ["🏋️‍♂️","🚶‍♂️","🏃‍♂️","🚴‍♂️"]
+        var x = 0
+        return setInterval(function () {
+            process.stdout.write(`\r\x1b[1m\x1b[5m${emo[x]} Fetching latest react templates... \x1b[0m\x1b[1m${P[x++]}\x1b[0m`);
+            x &= 3;
+        }, 250);
+    })();
     const data = await fetchTemplates();
+    clearInterval(anim2)
+    process.stdout.write(`\r`);
     const mapData = [];
     data.map((ele) => {
         mapData.push({
