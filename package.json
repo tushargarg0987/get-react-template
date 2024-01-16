@@ -4,6 +4,9 @@
   "description": "A powerful tool to create react templates for particular use cases",
   "bin": "./bin.js",
   "type": "module",
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com/@YOUR_USERNAME"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
