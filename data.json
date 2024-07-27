@@ -1,5 +1,49 @@
 [
   {
+    "name": "React + Vite + Tailwind + Vitest Template",
+    "repo": "https://github.com/riipandi/vite-react-template.git",
+    "description": "Starter template React with Vite, React, Tailwind CSS, React Router, React Hook Form, Vitest, and Testing Library.",
+    "repoName": "vite-react-template",
+    "script": "npm run dev",
+    "author": {
+      "name": "Aris Ripandi",
+      "github": "https://github.com/riipandi"
+    }
+  },
+  {
+    "name": "Node API + Auth + JWT Template",
+    "repo": "https://github.com/bobmacneal/node-api-jwt.git",
+    "description": "A nodeJs API template that implements authentication via JWTs",
+    "repoName": "node-api-jwt",
+    "script": "npm start",
+    "author": {
+      "name": "Bob MacNeal",
+      "github": "https://github.com/bobmacneal"
+    }
+  },
+  {
+    "name": "Nextjs + TailwindCSS + Typescript Template",
+    "repo": "https://github.com/ixartz/Next-js-Boilerplate.git",
+    "description": "Boilerplate and Starter for Next.js 14+ with App Router and Page Router support, Tailwind CSS 3.4 and TypeScript",
+    "repoName": "Next-js-Boilerplate",
+    "script": "npm start",
+    "author": {
+      "name": "Remi Wg",
+      "github": "https://github.com/ixartz"
+    }
+  },
+  {
+    "name": "React + Vite + TailWindCSS Template",
+    "repo": "https://github.com/atapas/vite-tailwind-react.git",
+    "description": "It is a template for you to start a project using React and TailwindCSS.",
+    "repoName": "vite-tailwind-react",
+    "script": "npm run dev",
+    "author": {
+      "name": "Tapas Adhikary",
+      "github": "https://github.com/atapas"
+    }
+  },
+  {
     "name": "Gatsby Starter Ghost",
     "repo": "https://github.com/TryGhost/gatsby-starter-ghost.git",
     "livePreview": "https://gatsby.ghost.org/",
